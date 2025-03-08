@@ -21,6 +21,9 @@ FIND_CPNT:
 SORT:  
 做替換點交換和排列  
 RESULT:  
-完成  
-         
+完成 
+
+
+問題 : 
+-  
 ![image](https://github.com/user-attachments/assets/10b76dfc-cd5c-487e-a922-201c329fc7f2)
