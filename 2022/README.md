@@ -7,9 +7,9 @@ run -all
 
 State:
 -
-IDLE:  
+//IDLE:  
 做初始化  
-DELAY_CLK:  
+//DELAY_CLK:  
 題目需要延遲兩個Clock Cycle在開始  
 CAL:  
 Counter數0~7做Cost的加法，而數到8做判斷是否為最小成本和Match最小成本的數量。  
