@@ -1,4 +1,4 @@
-Modelsim RTL Simulation 
+![image](https://github.com/user-attachments/assets/4f0a9254-e590-4118-8337-82c8da7911dd)Modelsim RTL Simulation 
 -
 vlog tb.sv JAM.v +define+P1 (Select Patterns you wanted)  
 vsim -gui work.testfixture  
@@ -23,3 +23,4 @@ SORT:
 RESULT:  
 完成  
          
+![image](https://github.com/user-attachments/assets/10b76dfc-cd5c-487e-a922-201c329fc7f2)
