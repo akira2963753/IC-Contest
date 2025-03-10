@@ -19,6 +19,8 @@ New_LEASER.v
 Cover Total = 169/170  
 -
 問題 : 迭代演算法設計Bad  
+  
+  
 Pattern 3  
 進入迭代修正前 : (7,7)、(11、8) -> Cover : 22/29   
 進入迭代修正後 :   
