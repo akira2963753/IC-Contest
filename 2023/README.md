@@ -9,3 +9,4 @@ PATTERN img2.pattern -> cover =  28, optimum =  28
 
 Cover total = 168/170  
 -
+單一測試樣本Cycle數 : 21000cycle左右
