@@ -12,6 +12,6 @@ PATTERN img1.pattern
 cover =  30, optimum =  30
 PATTERN img2.pattern
 cover =  28, optimum =  28
--
-# ----- Cover total = 168/170  
 
+Cover total = 168/170  
+-
