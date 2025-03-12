@@ -9,12 +9,12 @@ PATTERN img2.pattern -> cover =  28, optimum =  28
 
 Cover total = 168/170  
 -
-單一測試樣本Cycle數 : 21000cycle左右
+單一測試樣本Cycle數 : 25268個cycle左右
 
 New_LEASER.v  
 -
 改用25宮格做迭代修正  
-單一測試樣本Cycle數 : 32000cycle左右  
+單一測試樣本Cycle數 : 32000個cycle左右  
 
 Cover Total = 169/170  
 -
