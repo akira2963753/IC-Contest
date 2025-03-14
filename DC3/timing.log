@@ -1,0 +1,75 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : LASER
+Version: O-2018.06
+Date   : Thu Mar 13 23:38:28 2025
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: point_counter_reg[0]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: coverage_reg[225][0]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock CLK (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  point_counter_reg[0]/CK (DFFRQX2)        0.00       0.50 r
+  point_counter_reg[0]/Q (DFFRQX2)         0.30       0.80 f
+  U6131/Y (INVX2)                          0.06       0.87 r
+  U6142/Y (NAND2X2)                        0.15       1.02 f
+  U4563/Y (INVX2)                          0.10       1.12 r
+  U4536/Y (NAND2X2)                        0.15       1.27 f
+  U8712/Y (OAI22X1)                        0.11       1.38 r
+  U8715/Y (NOR4X1)                         0.06       1.44 f
+  U8721/Y (AOI22XL)                        0.10       1.55 r
+  U8722/Y (OAI2BB1X1)                      0.09       1.64 f
+  U4546/Y (INVX2)                          0.06       1.70 r
+  U6083/Y (NAND2XL)                        0.12       1.83 f
+  U6091/Y (OAI21XL)                        0.10       1.93 r
+  U4503/Y (OAI21X1)                        0.09       2.02 f
+  U4502/Y (AOI21X1)                        0.08       2.10 r
+  U4501/Y (OAI2B2X1)                       0.13       2.22 f
+  U3256/Y (OAI32XL)                        0.45       2.67 r
+  U4558/Y (INVX2)                          0.18       2.85 f
+  U8912/Y (NOR2X1)                         0.10       2.95 r
+  mult_167_2/U4/S (ADDFX1)                 0.29       3.24 f
+  U3640/CO (ADDFX1)                        0.27       3.51 f
+  U3626/CO (ADDFX1)                        0.18       3.69 f
+  U4215/CO (ADDFX1)                        0.18       3.86 f
+  U4217/S (ADDFX1)                         0.15       4.01 f
+  U9031/Y (OR3X1)                          0.14       4.15 f
+  U9032/Y (OAI32XL)                        0.15       4.30 r
+  U9033/Y (NOR2BX1)                        0.10       4.40 r
+  U6076/Y (NOR3BX1)                        0.10       4.50 r
+  U3294/Y (BUFX2)                          0.14       4.64 r
+  U4489/Y (INVX2)                          0.06       4.70 f
+  U6072/Y (NOR2X2)                         0.07       4.77 r
+  U4459/Y (NAND2X2)                        0.14       4.91 f
+  U4183/Y (OAI22X1)                        0.21       5.12 r
+  coverage_reg[225][0]/E (EDFFX2)          0.00       5.12 r
+  data arrival time                                   5.12
+
+  clock CLK (rise edge)                    8.00       8.00
+  clock network delay (ideal)              0.50       8.50
+  clock uncertainty                       -0.10       8.40
+  coverage_reg[225][0]/CK (EDFFX2)         0.00       8.40 r
+  library setup time                      -0.40       8.00
+  data required time                                  8.00
+  -----------------------------------------------------------
+  data required time                                  8.00
+  data arrival time                                  -5.12
+  -----------------------------------------------------------
+  slack (MET)                                         2.87
+
+
+1
