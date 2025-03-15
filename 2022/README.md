@@ -5,7 +5,7 @@ vsim -gui work.testfixture
 add wave -r *  
 run -all  
 
-#### Time : 580992ns  
+#### Time : 580992 Cycle  
 #### Area :  
 #### Grade :    
   
