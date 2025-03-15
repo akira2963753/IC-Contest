@@ -6,7 +6,7 @@ module JAM (
     input [6:0] Cost,
     output reg [3:0] MatchCount,
     output reg [9:0] MinCost,
-    output reg Valid
+    output Valid
 );
     parameter [2:0] IDLE = 3'd0, DELAY_CLK = 3'd1, CAL = 3'd2, FIND_PNT = 3'd3, FIND_CPNT =3'd4,SORT = 3'd5, RESULT = 3'd6;
     reg [2:0] state,next_state;
@@ -16,6 +16,8 @@ module JAM (
     reg [9:0] sum;
     integer i;
 
+    assign Valid = (state==RESULT);
+    
     //Set FSM
     always @(posedge CLK or posedge RST) begin
         if(RST) state <= IDLE;
@@ -87,14 +89,13 @@ module JAM (
     assign p_counter_minus1 = p_counter - 3'd1;
 
     //Set p_counter
-    always @(posedge CLK or posedge RST) begin  
-        if(RST) p_counter <= 3'd7;
-        else if(next_state==FIND_PNT) p_counter <= p_counter - 3'd1; //NEXT_STATE
+    always @(posedge CLK) begin  
+        if(next_state==FIND_PNT) p_counter <= p_counter - 3'd1; //NEXT_STATE
         else p_counter <= 3'd7;
     end
     //Find Point
-    always @(posedge CLK or posedge RST) begin
-        if(RST) {point,find_fin} <= 4'd0;
+    always @(posedge CLK) begin
+        if(state==IDLE) {point,find_fin} <= 4'd0;
         else if(next_state==FIND_PNT) begin //NEXT_STATE
             if(n[p_counter] > n[p_counter_minus1]) begin
                 point <= p_counter_minus1;
@@ -121,7 +122,7 @@ module JAM (
     end
 
     //Find Change Point
-    always @(posedge CLK or posedge RST) begin
+    always @(posedge CLK) begin
         if(state==IDLE) {c_point,mini_max} <= {3'd0,3'd7};
         else if(next_state==FIND_CPNT) begin //NEXT_STATE
             if(n[point + c_counter] > n[point]) begin
@@ -194,13 +195,6 @@ module JAM (
             endcase
         end
         else;
-    end
-
-    //Result
-    always @(posedge CLK or posedge RST) begin
-        if(RST) Valid <= 1'b0;
-        else if(state==RESULT) Valid <= 1'b1;
-        else Valid <= 1'b0;
     end
 
 endmodule
