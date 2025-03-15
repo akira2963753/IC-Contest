@@ -7,7 +7,7 @@ PATTERN img3.pattern -> cover =  28, optimum =  29  C1(4,7),C2(11,8)
 PATTERN img1.pattern -> cover =  30, optimum =  30  C1(11,12),C2(4,10)  
 PATTERN img2.pattern -> cover =  28, optimum =  28  C1(5,11),C2(11,6)  
 
-###Cover total = 168/170  
+### Cover total = 168/170  
 單一測試樣本Cycle數 : 25268個cycle左右
 
 New_LEASER.v  
@@ -15,9 +15,9 @@ New_LEASER.v
 改用25宮格做迭代修正  
 單一測試樣本Cycle數 : 32000個cycle左右  
 
-###Cover Total = 169/170  
+### Cover Total = 169/170  
 
-###問題 : 迭代演算法設計Bad  
+### 問題 : 迭代演算法設計Bad  
   
   
 Pattern 3  
