@@ -1,11 +1,11 @@
 Test Pattern Record
 -
-PATTERN img5.pattern -> cover =  23, optimum =  23  
-PATTERN img4.pattern -> cover =  29, optimum =  30  
-PATTERN img6.pattern -> cover =  30, optimum =  30  
-PATTERN img3.pattern -> cover =  28, optimum =  29  
-PATTERN img1.pattern -> cover =  30, optimum =  30    
-PATTERN img2.pattern -> cover =  28, optimum =  28  
+PATTERN img5.pattern -> cover =  23, optimum =  23  C1(3,10),C2(10,11)  
+PATTERN img4.pattern -> cover =  29, optimum =  30  C1(11,9),C2(5,5)  
+PATTERN img6.pattern -> cover =  30, optimum =  30  C1(13,2),C2(8,9)   
+PATTERN img3.pattern -> cover =  28, optimum =  29  C1(4,7),C2(11,8)  
+PATTERN img1.pattern -> cover =  30, optimum =  30  C1(11,12),C2(4,10)  
+PATTERN img2.pattern -> cover =  28, optimum =  28  C1(5,11),C2(11,6)  
 
 Cover total = 168/170  
 -
