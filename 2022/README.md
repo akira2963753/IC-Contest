@@ -5,6 +5,10 @@ vsim -gui work.testfixture
 add wave -r *  
 run -all  
 
+#### Time : 580992ns  
+#### Area :  
+#### Grade :    
+
 State
 -
 IDLE:  
