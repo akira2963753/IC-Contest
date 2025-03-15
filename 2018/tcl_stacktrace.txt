@@ -1,0 +1,25 @@
+Wed Mar 12 03:45:03 CST 2025
+Trace back: expected integer but got ""
+    while executing
+"incr current_undo_stack_count -1"
+    (procedure "Wave::UndoEnd" line 27)
+    invoked from within
+"Wave::UndoEnd $winname"
+    (procedure "_showDFReadersDrivers" line 44)
+    invoked from within
+"_showDFReadersDrivers drivers .main_pane.wave.interior.cs.body.pw.wf 1"
+    ("eval" body line 1)
+    invoked from within
+"eval _showDFReadersDrivers "drivers" $winname $classic $args"
+    (procedure "Wave::ShowDFDrivers" line 2)
+    invoked from within
+"Wave::ShowDFDrivers $top 1"
+    (procedure "Wave::1Up" line 27)
+    invoked from within
+"Wave::1Up $widget $x $y"
+    (procedure "Wave::SelectUp" line 4)
+    invoked from within
+"Wave::SelectUp	 .main_pane.wave.interior.cs.body.pw.wf.grid.row0,wave.data 660 231 1049 447 "
+    (command bound to event)
+  <2:C:/intelFPGA_pro/21.1/modelsim_ase/win32aloem/tk8.6/bgerror.tcl:106: ::tkerror {expected integer but got ""}
+  <1:C:/mtitcl/vsim/vsiminit.tc_:523: ::tk::dialog::error::bgerror {expected integer but got ""}
