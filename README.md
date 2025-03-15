@@ -3,7 +3,7 @@
 歷屆試題皆可從官網上下載  
 https://proj.moe.edu.tw/moeisoc/cl.aspx?n=6129  
 
-### Some tips for improving your RTL Code :   
+  ### Some tips for improving your RTL Code :   
 1. 盡量不要使用大於、小於，會增加邏輯單元。  
 2. 盡量減少Register的長度。  
 3. 盡量使用Case語句，而不是If,else(優先級編碼可能會增加邏輯複雜度)。  
